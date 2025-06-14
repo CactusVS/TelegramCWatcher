@@ -1,0 +1,10 @@
+{
+  "api_id": 12345678,
+  "api_hash": "Your_API_Hash",
+  "phone_number": "+xXxXxXxXxXxX",
+  "text_to_watch": ["text1", "text2"],
+  "send_to": ["tg", "dc"],
+  "telegram_target": "me",
+  "discord_webhook_url": "https://discord.com/api/webhooks/12345678",
+  "discord_ping_text": "@everyone"
+}

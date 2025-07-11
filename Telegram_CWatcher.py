@@ -13,7 +13,6 @@ with open("config.json", encoding="utf-8") as f:
 
 api_id = config["api_id"]
 api_hash = config["api_hash"]
-phone_number = config["phone_number"]
 text_to_watch = config["text_to_watch"]
 SEND_TO = config["send_to"]
 DISCORD_WEBHOOK_URL = config["discord_webhook_url"]
@@ -103,8 +102,9 @@ async def edited_message_handler(event):
         await notify_all("Обновлённое упоминание", event)
 
 # === Запуск проги ===
+import base64;print(base64.b64decode("VGVsZWdyYW0gQ1dhdGNoZXIgdjEuMQrQodC+0LfQtNCw0L3QviBAQ2FjdHVzVlM=").decode("utf-8"))
 async def main():
-    await client.start(phone=phone_number)
+    await client.start()
     print("▶️ Слежка за упоминаниями запущена...")
     await client.run_until_disconnected()
 
